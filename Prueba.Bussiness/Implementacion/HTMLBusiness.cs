@@ -13,10 +13,12 @@ namespace Prueba.Bussiness.Implementacion
     {
         private List<ListaElementosDto> procesar(string Valor)
         {
+            Valor = Valor.TrimStart(' '); //Quitar Espacios
+            Valor = Valor.TrimEnd(' ');
             List<ListaElementosDto> listElementos = new List<ListaElementosDto>();
             string[] words = Valor.Split('#');
             int ContH = 0;
-            string valor = "";
+            string valorPalabra = "";
 
             foreach (string word in words)
             {
@@ -26,13 +28,13 @@ namespace Prueba.Bussiness.Implementacion
                 }
                 if (word != "")
                 {
-                    valor = word;
+                    valorPalabra = word;
                 }
-                if (valor != "")
+                if (valorPalabra != "")
                 {
-                    listElementos.Add(new ListaElementosDto { Numero = ContH, Texto = valor });
+                    listElementos.Add(new ListaElementosDto { Numero = ContH, Texto = valorPalabra });
                     ContH = 1;
-                    valor = "";
+                    valorPalabra = "";
                 }
             }
             if (ContH > 1)
@@ -50,7 +52,7 @@ namespace Prueba.Bussiness.Implementacion
             foreach (ListaElementosDto elementos in lista)
             {
 
-                resultado = string.Format("{0}<H{1}>{2}</H{1}>{3}", resultado, elementos.Numero, elementos.Texto, Environment.NewLine);
+                resultado = string.Format("{0}<h{1}>{2}</h{1}>{3}", resultado, elementos.Numero, elementos.Texto, Environment.NewLine);
             
             
             
