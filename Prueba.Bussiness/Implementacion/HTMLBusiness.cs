@@ -11,7 +11,7 @@ namespace Prueba.Bussiness.Implementacion
 {
     public class HTMLBusiness : ILenguajeBusiness
     {
-        private List<ListaElementosDto> procesar(string Valor) // Refactoring del metodo que realizara la logica de la aplicacion
+        private List<ListaElementosDto> procesar(string Valor) 
         {
             Valor = Valor.TrimStart(' '); //Quitar Espacios
             Valor = Valor.TrimEnd(' '); //Quitar Espacios

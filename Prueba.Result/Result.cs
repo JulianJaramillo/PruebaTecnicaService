@@ -6,7 +6,7 @@ namespace Prueba.Result
     [DataContract]
     public sealed class Result<T>
     {
-        // Construccion de cuerpo de mensaje para tener mas informacion de la respuesta del servicio, por si se presenta algun problema
+        //Encapsula la respuestas de los componentes
         
         [DataMember]
         public T Value { get; private set; }
