@@ -7,16 +7,10 @@ namespace Prueba.Bussiness.Factory
     {
        public static ILenguajeBusiness Intancia(string tipo="HTML") 
         {
-            //if (tipo == "HTML")
-            //{
-                 return (new HTMLBusiness());
-            //}
-            //else {
-            //    return (new PascalBusiness());
-            //}
-        
+           // En este caso se realiza la creacion de un Factory por si se quiere realizar una nueva implementacion a partir de la interface
 
-        
+                 return (new HTMLBusiness());
+
         }
     }
 }

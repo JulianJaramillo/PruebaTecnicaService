@@ -5,7 +5,7 @@ namespace Prueba.Result
 {
     public class PruebaSoftException : Exception
     {
-
+        // Construccion de cuerpo de mensaje para tener mas informacion de la respuesta del servicio, por si se presenta algun problema
         public PruebaSoftException()
         {
         }

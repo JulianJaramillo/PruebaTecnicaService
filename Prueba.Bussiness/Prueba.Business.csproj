@@ -43,7 +43,6 @@
     <Compile Include="Dto\ListaElementosDto.cs" />
     <Compile Include="Factory\FactoryLenguajeBusiness.cs" />
     <Compile Include="Implementacion\HTMLBusiness.cs" />
-    <Compile Include="Implementacion\PascalBusiness.cs" />
     <Compile Include="Interfaces\ILenguajeBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

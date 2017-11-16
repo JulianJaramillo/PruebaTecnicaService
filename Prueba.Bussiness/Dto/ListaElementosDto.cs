@@ -8,7 +8,7 @@ namespace Prueba.Bussiness.Dto
 {
     public class ListaElementosDto
     {
-
+        // Creacion de propiedades para el almacenaje de estas en la lista, que usara para implementar la logica de la aplicacion
         public int Numero { get; set; }
         public string Texto { get; set; }
 
